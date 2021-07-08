@@ -1,0 +1,76 @@
+.wrapper {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.participants {
+  padding: 10px 6px;
+  background-color: white;
+}
+
+.single_user {
+  background-color: lightgreen;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 12px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+.room_status {
+  padding: 2em 0;
+  background-color: lightgreen;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+  }
+}
+
+//chat
+.chat {
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .chat_messages {
+    height: 100%;
+    background-color: aliceblue;
+  }
+
+  .chat_input {
+    padding: 2em;
+
+    form {
+      display: flex;
+      align-items: center;
+      input {
+        width: 100%;
+      }
+      button {
+        &:hover {
+          cursor: pointer;
+          color: rgba(0,0,0,0.8)
+        }
+      }
+      button, input {
+        height: 40px;
+        border: none;
+        padding: 10px;
+        background-color: white;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
